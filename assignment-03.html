@@ -1,0 +1,18 @@
+<html>
+    <head>
+         for getting the current date
+    </head>
+    <body>
+        <p id="text1"></p>
+        <p id="text2"></p>
+        <script>
+
+            var today = new Date();
+            
+            var date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
+            document.getElementById("text1").innerHTML = date;
+            var date = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear();
+            document.getElementById("text2").innerHTML = date;
+            </script>
+    </body>
+</html>
